@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+  color: #4e4e4e;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+header {
+  background: linear-gradient(to right, #f48fb1, #ce93d8);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 4px dashed #ab47bc;
+  border-radius: 0 0 30px 30px;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #fff8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-weight: 600;
+  font-size: 1rem;
+  font-style: italic;
+  gap: 1.5rem;
+  border-bottom: 2px dotted #f8bbd0;
+}
+
+nav a {
+  color: #d81b60;
+  background: #ffe0e9;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(255, 192, 203, 0.3);
+}
+
+nav a:hover {
+  background: #f8bbd0;
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-style: italic;
+}
+
+form, .todo {
+  background: #fff0f5;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease;
+  font-style: italic;
+  border: 2px dashed #f8bbd0;
+}
+
+form:hover, .todo:hover {
+  transform: scale(1.02);
+}
+
+form h2, .todo h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: #ad1457;
+  font-style: italic;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 2px solid #f8bbd0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  background-color: #fffafa;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+input[type="submit"],
+button {
+  background: #f06292;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(240, 98, 146, 0.4);
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background: #ec407a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-style: italic;
+}
+
+li {
+  background: #ffe0f0;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+  font-style: italic;
+}
+
+li button {
+  background: #d81b60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #ad1457;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  form, .todo {
+    width: 100%;
+  }
+}
